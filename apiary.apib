@@ -26,6 +26,14 @@ POST /shopping-cart
 < Content-Type: application/json
 { "status": "created", "url": "/shopping-cart/2" }
 
+Delete products in your shopping cart
+DELETE /shopping-cart
+> Content-Type: application/json
+{ "product":"1AB23ORM" }
+< 201
+< Content-Type: application/json
+{ "status": "removed" }
+
 
 -- Payment Resources --
 This resource allows you to submit payment information to process your *shopping cart* items
